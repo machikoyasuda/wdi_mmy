@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<link rel="stylesheet" href="css/normalize.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<style>
+		.wrapper {
+			background: #ddd;
+			border: 1px solid #000;
+			height: 3000px;
+			margin: 20px auto;
+			width: 600px;
+			position: relative;
+		}
+		.column {
+			float: left;
+			width: 300px;
+		}
+		/** .clear {
+			clear: both;
+		} **/
+		/** .clearfix:after {
+			clear: both;
+			content:".";
+			display: block;
+			height: 0;
+			visibility: hidden;
+			zoom: 1;
+		} **/
+
+		.box1, .box2, .box3, .box4 {
+			border: 1px solid #000;
+			height: 100px;
+			width: 100px;
+			top: 40px;
+			left: 40px;
+		}
+
+		.box1 {
+			background: red;
+		}
+		.box2 {
+			background: green;
+			position: relative;
+		}
+		.box3 {
+			background: blue;
+			position: absolute;
+		}
+		.box4 {
+			background: yellow;
+			position: fixed;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper clearfix">
+		<div class="box1">
+			<!--<strong>A < div > is a block element. A block-level element creates a container block.</strong> Aesthetic cillum Bushwick, forage wolf nisi intelligentsia est ad occaecat deserunt. Bespoke messenger bag flexitarian, mumblecore cray esse craft beer asymmetrical cred iPhone intelligentsia sint beard vero Etsy. Artisan enim kitsch et pop-up freegan typewriter. Terry Richardson enim voluptate chambray squid. Qui wolf eiusmod, craft beer leggings eu readymade cupidatat master cleanse bicycle rights kale chips sapiente. Tousled Neutra ullamco keffiyeh, Tonx aliqua mixtape direct trade pour-over. Hella you probably haven't heard of them kale chips, chillwave iPhone salvia occupy ethical raw denim cliche banh mi fixie commodo.-->
+		</div>
+		<div class="box2">
+			<!--<em>By default, a < div > is a block element. But you can use a CSS style to make it inline instead. A block element like a div will accept height, width and margins. If you add float:left to the div:column class, they will sit in two columns. The parent will have no height. Floating elements are removed from the flow of the page, so the containing div < wrapper > will not have any height. </em> <strong>Clear: both says that nothing can be floating either to the right or left of this div. It puts that div below any floating elements. Clear:right, left, both, or none. Put a clear:both after every group of floating elements.</strong> Aesthetic cillum Bushwick, forage wolf nisi intelligentsia est ad occaecat deserunt. Bespoke messenger bag flexitarian, mumblecore cray esse craft beer asymmetrical cred iPhone intelligentsia sint beard vero Etsy. Artisan enim kitsch et pop-up freegan typewriter. Terry Richardson enim voluptate chambray squid. Qui wolf eiusmod, craft beer leggings eu readymade cupidatat master cleanse bicycle rights kale chips sapiente. Tousled Neutra ullamco keffiyeh, Tonx aliqua mixtape direct trade pour-over. Hella you probably haven't heard of them kale chips, chillwave iPhone salvia occupy ethical raw denim cliche banh mi fixie commodo.-->
+		</div>
+		<!--<div class="clear">
+		</div>-->
+		<div class="box3">
+		</div>
+		<div class="box4">
+		</div>
+		<div class="box5">
+		</div>
+	</div>
+	<footer>By default, all block elements, like divs, have a position: static. When you declare an element something other than static (fixed, absolute, relative), you are creating a coordinate system for the rest of the block elements that follow. 
+		<ul>
+			<li><strong>Position: static;</strong> default - Will not respond to top, bottom, right, left.</li>
+			<li><strong>Position: fixed;</strong> means that the position of the box is defined based on the top and left corner of the browser window. Position:fixed means that the div will not move, even if you scroll. It will stay top/left 40px no matter where you scroll. </li>
+			<li><strong>Position: absolute;</strong> Similar to fixed, but it will scroll with the page. Absolute positioning is positioned in relation to a <strong>parent</strong> element that is <em>not</em> static. This box is absolute, in relation to the closest parent element that is not static - the page itself. Therefore, this aboslute box is positioned 40px top/left from the top of the page.</li>
+			<li><strong>Position: relative;</strong> Position is moved relative to where it would-have been before.</li>
+	</footer>
+</body>
+</html>
